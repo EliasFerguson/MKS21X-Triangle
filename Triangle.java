@@ -34,4 +34,7 @@ public class Triangle {
       v3 = newP;
     }
   }
+  public String toString() {
+    return "Triange: A" + v1.toString() + " B" + v2.toString() + " C" + v3.toString();
+  }
 }
