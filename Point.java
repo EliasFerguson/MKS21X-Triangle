@@ -31,7 +31,7 @@ public class Point{
     double b = (p1.y - p2.y);
     return Math.sqrt((a * a) + (b * b));
   }
-//  public String toString() {
-    //
-  //}
+  public String toString() {
+    return "(" + x + ", " + y + ")";
+  }
 }
