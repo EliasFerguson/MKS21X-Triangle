@@ -19,8 +19,19 @@ public class Triangle {
     double v1v3 = v1.distanceTo(v3);
     return v1v2 + v2v3 + v1v3;
   }
-//  public Point getVertex(int index) {
-//
-//  }
-//  public void setVertex(int index, Point newP)
+  public Point getVertex(int index) {
+    Point[] plist = {v1, v2, v3};
+    return plist[index];
+  }
+  public void setVertex(int index, Point newP) {
+    if (index == 0) {
+      v1 = newP;
+    }
+    else if (index == 1) {
+      v2 = newP;
+    }
+    else if (index == 2) {
+      v3 = newP;
+    }
+  }
 }
